@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-
+import { LocaleProvider } from 'antd';
+import enGB from 'antd/lib/locale-provider/en_GB';
+// import createHistory from 'history/createHashHistory';
+// import { ConnectedRouter } from 'react-router-redux';
+//import 'resources/_antd.less';
+import Header from './comp/header';
+import Routes from './comp/routes';
+// const history = createHistory();
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* <ConnectedRouter history={history}> */}
+        <LocaleProvider locale={enGB}>
+          <Header />
+          <Routes />
+        </LocaleProvider>
+        {/* </ConnectedRouter> */}
+      </div>
+    </Router>
   );
 }
 

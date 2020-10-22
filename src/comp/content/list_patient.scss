@@ -1,0 +1,30 @@
+.patients-container {
+  margin-right: 2%;
+  margin-left: 2%;
+  .col-btn {
+    height: 100px;
+    text-align: right;
+    .ant-btn {
+      margin-top: 42px;
+    }
+  }
+  .tbl-list-patients {
+    margin-top: 10px;
+  }
+  .tbl-col-action {
+    display: inline;
+  }
+  .div-search {
+    justify-content: initial;
+    display: flex;
+    height: 100px;
+    position: relative;
+    .inp-search {
+      width: 90%;
+    }
+    .btn-search {
+      margin-top: 42px;
+      margin-left: 5px;
+    }
+  }
+}

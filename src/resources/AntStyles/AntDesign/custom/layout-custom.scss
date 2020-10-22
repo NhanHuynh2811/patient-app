@@ -1,0 +1,56 @@
+.ant-layout {
+  &.content-no-scroll {
+    height: 100vh;
+    .ant-layout-content {
+      height: 100%;
+      .utils__content {
+        height: 100%;
+      }
+      .order-detail {
+        height: calc(100% - 30px);
+        .ant-tabs {
+          height: 100%;
+          .ant-tabs-content {
+            height: 100%;
+            .ant-tabs-tabpane-active {
+              height: 100%;
+              .ant-spin-nested-loading {
+                height: 100%;
+                .ant-spin-container {
+                  height: 100%;
+                  .list-floor-and-apartment {
+                    height: 100%;
+                    .body {
+                      height: calc(100% - 170px);
+                      .filter-floor-wrapper {
+                        height: 50px;
+                      }
+                      #floors-apartments-scroll {
+                        height: calc(100% - 50px);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ant-form-item-label > label.ant-form-item-required::after {
+  content: '*';
+  color: #fb434a;
+}
+
+.ant-form-item-required::before {
+  display: none;
+}
+// .ant-table-body {
+//   overflow-x: auto !important;
+// }
+
+.ant-table-column-title {
+  font-weight: 500;
+}

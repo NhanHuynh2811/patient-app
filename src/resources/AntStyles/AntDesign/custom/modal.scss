@@ -1,0 +1,29 @@
+.ant-modal-content {
+  background-color: transparent;
+  .ant-modal-close {
+    background-color: #F2F4F9;
+    color: #000000;
+    .ant-modal-close-x {
+      height: 42px;
+      width: 42px;
+      line-height: 37px;
+    }
+  }
+  .ant-modal-header {
+    background-color: #FFFFFF;
+    padding: 10px 24px;
+    .ant-modal-title {
+      color: #000000;
+      text-align: center;
+      font-weight: 900 !important;
+    }
+  }
+  .ant-modal-body {
+    background-color: #FFFFFF;
+    padding: 20px;
+  }
+  .ant-modal-footer {
+    background-color: #FFFFFF;
+    padding: 8px;
+  }
+}
